@@ -1,0 +1,20 @@
+---
+application:
+  name: "strapi-thawing-sierra-45764"
+  project: "strapi-thawing-sierra-45764"
+  organization: "QoveryCommunity"
+  storage:
+  - name: "thawing-sierra-storage"
+    size: "10"
+    type: "ssd"
+    mount_point: "/mnt/thawing-sierra-storage"
+databases:
+- type: "POSTGRESQL"
+  name: "thawing-sierra-db"
+  version: "11"
+routers:
+- name: "main-strapi-thawing-sierra-45764"
+  routes:
+  - application_name: "strapi-thawing-sierra-45764"
+    paths:
+    - "/*"
